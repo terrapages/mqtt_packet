@@ -1,0 +1,12 @@
+{application, yunba_mqtt_serialiser,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { yunba_mqtt_serialiser_app, []}},
+  {env, []}
+ ]}.
