@@ -6,9 +6,9 @@
 %%% @end
 %%% Created : 22. 五月 2016 上午11:53
 %%%-------------------------------------------------------------------
--module(yunba_mqtt_serialiser).
+-module(mqtt_packet).
 
--include("yunba_mqtt_serialiser.hrl").
+-include("mqtt_packet.hrl").
 
 -export([parse/2, serialise/2]).
 

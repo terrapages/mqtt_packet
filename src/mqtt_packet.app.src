@@ -1,4 +1,4 @@
-{application, yunba_mqtt_serialiser,
+{application, mqtt_packet,
  [
   {description, ""},
   {vsn, "1"},
@@ -7,6 +7,6 @@
                   kernel,
                   stdlib
                  ]},
-  {mod, { yunba_mqtt_serialiser, []}},
+  {mod, { mqtt_packet, []}},
   {env, []}
  ]}.
