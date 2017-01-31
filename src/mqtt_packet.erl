@@ -13,7 +13,12 @@
 -export([parse/2, serialise/2]).
 
 parse(MqttPackage, ProtocolVersion) ->
-    parse(MqttPackage, none, ProtocolVersion).
+    case parse(MqttPackage, none, ProtocolVersion) of
+        {ok, Frame, _} ->
+            {ok, Frame};
+        {error, Reason} ->
+            {error, Reason}
+    end.
 
 serialise(#mqtt_frame{ fixed = Fixed,
                        variable = Variable,
